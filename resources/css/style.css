@@ -1,0 +1,185 @@
+html,
+body {
+ font-family: Merriweather, sans-serif;
+ font-size: 16px;
+ background-color: white;
+}
+
+/* Boxes to help with design  */
+section,
+div,
+header,
+footer,
+nav {
+  border: 1px solid blue;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4{
+  font-size: 0.8rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  z-index: 10;
+  position: fixed;
+  height: 64px;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1.5rem;
+  font-family: Merriweather, sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  max-width: 30%;
+}
+
+.mlogo {
+  flex: 1;
+}
+
+.grey {
+  flex: 2;
+  font-weight: 600;
+  color: midnight;
+}
+
+.lgrey {
+  flex: 3;
+  font-weight: 300;
+  color: gray;
+}
+
+nav {
+  max-width: 70%;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  max-width: 100%;
+  vertical-align: middle;
+  margin-right: 1rem;
+  font-family: Merriweather, sans-serif;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration:none;
+  color: black;
+}
+
+.logo img {
+  max-height: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu .mob-nav {
+  display: none;
+}
+
+/* "Learn something new" and Information Sections */
+.learn {
+  padding-top: 65px;
+  background-color: lightgray;
+}
+
+.learn,
+.info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.left {
+  display: flex;
+  max-width: 60%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left .banner,
+.left .main {
+  width: 95%;
+  margin: 2rem 1.5rem;
+}
+
+.left img {
+  max-width: 100%;
+  margin: 2rem 1.5rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  align-content: center;
+  max-width: 40%;
+}
+
+.info-mimage {
+  display: none;
+}
+
+.right .button {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 20%;
+}
+
+
+
+/* Course Section */
+.course {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
