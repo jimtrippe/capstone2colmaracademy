@@ -1,6 +1,6 @@
 html,
 body {
- font-family: Merriweather, sans-serif;
+ font-family: "Merriweather Sans", sans-serif;
  font-size: 16px;
  background-color: white;
 }
@@ -16,18 +16,27 @@ nav {
 
 h1 {
   font-size: 2rem;
+  font-family: "Archive Black", sans-serif;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 1.5rem;
+  font-family: "Archive Black", sans-serif;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 1rem;
+  line-height: 1.2;
 }
 
 h4{
   font-size: 0.8rem;
+}
+
+p {
+  line-height: 1.2;
 }
 
 /* Header */
@@ -47,7 +56,6 @@ header {
   justify-content: space-between;
   width: 100%;
   padding: 0 1.5rem;
-  font-family: Merriweather, sans-serif;
 }
 
 .logo {
@@ -98,19 +106,18 @@ nav li {
   width: 100%;
 }
 
-a:link {
-  text-decoration: none;
-  color: black;
-}
-
-a:active {
-  text-decoration: none;
-  color: black;
-}
-
+a:link,
+a:active,
 a:visited {
-  text-decoration:none;
   color: black;
+  text-decoration: none;
+}
+
+.detail a:link,
+.detail a:active,
+.detail a:visited {
+  color: blue;
+  text-decoration: none;
 }
 
 .logo img {
@@ -130,56 +137,264 @@ a:visited {
 }
 
 .learn,
-.info {
+.info,
+.thesis {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  max-width: 100%;
 }
 
 .left {
   display: flex;
-  max-width: 60%;
+  width: 60%;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  text-align: left;
 }
 
 .left .banner,
 .left .main {
-  width: 95%;
+  width: 92.5%;
   margin: 2rem 1.5rem;
 }
 
 .left img {
-  max-width: 100%;
+  width: 100%;
   margin: 2rem 1.5rem;
+}
+
+.left h1,
+.left h3,
+.left h4 {
+  margin: 1rem 1.5rem;
+}
+
+.left h1,
+.thesis .left h2 {
+  font-size: 2.5rem;
+}
+
+.left h3,
+.thesis .left p,
+.thesis .details h3 {
+  font-size: 1.2rem;
+  font-family: "Merriweather Sans";
+  font-weight: 300;
+}
+
+.left h4 {
+  font-size: 1rem;
+  font-family: "Merriweather Sans";
+  font-weight: 300;
+  margin-bottom: 2rem;
 }
 
 .right {
   display: flex;
   flex-direction: column;
   align-items: left;
-  align-content: center;
-  max-width: 40%;
+  align-content: space-between;
+  justify-content: center;
+  align-self: center;
+  width: 40%;
+  margin: 2rem 0;
+}
+
+.learn .right h1,
+.learn .right h3,
+.thesis .right h1,
+.thesis .right h3 {
+  margin: 1rem 1rem;
+}
+
+.learn .right h1,
+.thesis .right h1 {
+  font-size: 2rem;
+}
+
+.learn .right h3,
+.thesis .right h3 {
+  font-size: 1.4rem;
+  font-family: "Merriweather Sans";
+  font-weight: 300;
+}
+
+.right .button {
+  text-align: center;
+  background-color: gray;
+  color: white;
+  padding: 0.5rem 20%;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+}
+
+.icontainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.gray {
+  background-color: lightgray;
+}
+
+.info-dimage {
+  width: 90%;
+  height: auto;
+  margin: 1rem 0 1rem 1rem;
+}
+
+.image {
+  max-width: 35%;
+}
+
+.detail {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 1rem;
+}
+
+.detail h2,
+.detail h3,
+.detail a,
+.thesis .left h2,
+.thesis .left p  {
+  margin: 0.4rem 0.25rem;
+}
+
+.detail h3,
+.detail a,
+.thesis .left p {
+  font-family: "Merriweather Sans";
+  font-weight: 300;
 }
 
 .info-mimage {
   display: none;
 }
 
-.right .button {
-  text-align: center;
-  background-color: black;
-  color: white;
-  padding: 0.5rem 20%;
-}
-
-
-
-/* Course Section */
+/* Courses Section */
 .course {
   display: flex;
-  width: 100%;
   justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: lightgray;
+}
+
+.title {
+  display: block;
+  max-width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding-top: 2rem;
+  background-color: lightgray;
+}
+
+.title h2 {
+  font-size: 2.2rem;
+}
+
+.class {
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 10.75rem 1rem 10.75rem;
+  background-color: lightgray;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  margin: 0 0.5rem 1rem 0.5rem;
+  background-color: white;
+}
+
+.details img {
+  width: 100%;
+  height: auto;
+}
+
+.details h2,
+.details h3,
+.details p {
+  margin: 0.5rem 1rem 0 1rem;
+}
+
+.details p {
+  padding-bottom: 1.5rem;
+}
+
+/* Thesis Exhibit Section */
+.exhibit {
+  display: block;
+  max-width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.exhibit h2 {
+  font-size: 2.2rem;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.r-urban {
+  margin: 0 1.5rem;
+  width: 92%;
+}
+
+.thesis .left h2,
+.thesis .detail h2 {
+  font-size: 1.4rem;
+}
+
+.thesis .left p,
+.thesis .detail h3 {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.thesis .left h2 {
+  margin: 1.5rem 0 0.5rem 1.5rem;
+}
+
+.thesis .left p {
+  margin: 0 1.5rem 2rem 1.5rem;
+}
+
+.thesis .right {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  align-self: center;
+  width: 40%;
+  margin: 2rem 0;
+}
+
+.dimage {
+  width: 90%;
+  height: auto;
+  margin: 1rem 0 1rem 1rem;
+}
+
+/* Footer Section */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  background-color: lightgray;
 }
